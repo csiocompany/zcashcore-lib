@@ -1,6 +1,6 @@
 {
-  "name": "bitcore-lib-zcash",
-  "main": "./bitcore-lib-zcash.min.js",
+  "name": "zcashcore-lib",
+  "main": "./zcashcore-lib.min.js",
   "version": "0.13.19",
   "homepage": "http://bitcore.io",
   "authors": [

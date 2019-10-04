@@ -6,15 +6,15 @@ var bitcore = module.exports;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of bitcore-lib-zcash found. ' +
-      'Please make sure to require bitcore-lib-zcash and check that submodules do' +
-      ' not also include their own bitcore-lib-zcash dependency.';
+    var message = 'More than one instance of zcashcore-lib found. ' +
+      'Please make sure to require zcashcore-lib and check that submodules do' +
+      ' not also include their own zcashcore-lib dependency.';
     // TODO: put this back if we start versioning again
     //throw new Error(message);
   }
 };
-bitcore.versionGuard(global._bitcore);
-global._bitcore = bitcore.version;
+bitcore.versionGuard(global._zcashcore);
+global._zcashcore = bitcore.version;
 
 // crypto
 bitcore.crypto = {};
